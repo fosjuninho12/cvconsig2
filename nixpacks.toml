@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["php82", "php82Packages.composer"]
+nixPkgs = ["php74", "php74Packages.composer"]
 
 [phases.install]
-cmds = ["composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader"]
+cmds = ["composer install --no-interaction --prefer-dist --optimize-autoloader"]
 
 [start]
 cmd = "php -S 0.0.0.0:3000 -t public public/index.php"
