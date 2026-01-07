@@ -2,10 +2,10 @@
 /**
  * DATABASE
  */
-define("CONF_DB_HOST", "localhost");
-define("CONF_DB_USER", "root");
-define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "fullstackphp");
+define("CONF_DB_HOST", "bd_cvconsig");
+define("CONF_DB_USER", "cvconsig");
+define("CONF_DB_PASS", "admin");
+define("CONF_DB_NAME", "cvconsig");
 
 /**
  * PROJECT URLs
