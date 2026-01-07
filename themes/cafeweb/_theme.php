@@ -8,7 +8,7 @@
     <?= $head; ?>
 
     <link rel="icon" type="image/png" href="<?= theme("/assets/images/favicon.png"); ?>"/>
-    <link rel="stylesheet" href="<?= theme("/assets/style.css"); ?>"/>
+    <link rel="stylesheet" href="<?= theme("/assets/css/style.css"); ?>"/>
 </head>
 <body>
 
