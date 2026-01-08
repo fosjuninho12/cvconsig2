@@ -2,5 +2,6 @@
 cmds = ["composer install --ignore-platform-reqs --no-dev --prefer-dist --no-interaction --optimize-autoloader"]
 
 [start]
-cmd = "php -S 0.0.0.0:$PORT -t public public/router.php"
+cmd = "php -d display_errors=0 -d display_startup_errors=0 -d error_reporting=0 -S 0.0.0.0:$PORT -t public public/router.php"
+
 
