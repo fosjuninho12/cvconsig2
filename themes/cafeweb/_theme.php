@@ -105,8 +105,22 @@
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53658515-18"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="<?= theme("/assets/js/scripts.js"); ?>"></script>
+
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script defer src="<?= theme("/assets/js/scripts.js"); ?>"></script>
+
+<script>
+    // Fallback: garante que o loader suma mesmo se algo falhar
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            var el = document.querySelector(".ajax_load");
+            if (el) {
+                el.style.display = "none";
+            }
+        }, 500);
+    });
+</script>
+
 <?= $v->section("scripts"); ?>
 
 </body>
